@@ -1,24 +1,24 @@
 package dk.aau.imi.med4.guinmp2009.threads.lesson01;
 
-public class PingPongThread extends Thread {
+public class PingPongRunnable implements Runnable {
 	private String word;
 	private int delay;
 	
 	/**
-	 * PingPongThread's constructor.
+	 * PingPongRunnable's constructor.
 	 * @param whatToSay The word that the thread should print out.
 	 * @param delayTime The delay time in ms between outputs.
 	 */
-	public PingPongThread(String whatToSay, int delayTime) {
+	public PingPongRunnable(String whatToSay, int delayTime) {
 		word = whatToSay; 	// What word to print
 		delay = delayTime; 	// How long to pause
 	}
 	
 	/**
-	 * Runs forever, printing out this PingPongThread's word
+	 * Runs forever, printing out this PingPongRunnable's word
 	 * and then sleeping for delay ms.
 	 * 
-	 * Cannot throw exceptions because Thread.run() doesn't.
+	 * Cannot throw exceptions because Runnable.run() doesn't.
 	 * 
 	 * Therefore has to catch the InterruptedException thrown
 	 * by Thread.sleep(delay)
@@ -42,7 +42,11 @@ public class PingPongThread extends Thread {
 										// thread
 			}
 		} catch (InterruptedException e) {
-			System.out.println("\n" + getName() + " was interrupted.\n");
+			/*
+			 * Need to use Thread.currentThread() to get the currently executing Thread.
+			 * A Runnable object doesn't have a name.
+			 */
+			System.out.println("\n" + Thread.currentThread().getName() + " was interrupted.\n");
 			return;
 		}
 	}
