@@ -12,12 +12,20 @@ package dk.aau.imi.med4.guinmp2009.threads.lesson01;
  *
  */
 public class PingPong {
+	
+	/**
+	 * A static field to store the number of words printed
+	 * so far to the current line. When this number reaches
+	 * 10, it is reset to 0.
+	 */
 	public static int lineCount = 0;
 	
 	public static void main(String[] args) {
 		try {
 			PingPongThread ping = new PingPongThread("ping", 50);
 			PingPongThread pong = new PingPongThread("PONG", 50);
+			ping.setName("PingThread");
+			pong.setName("PongThread");
 			ping.start();
 			pong.start();
 			Thread.sleep(10000);
