@@ -37,7 +37,7 @@ public class PingPongThread extends Thread {
 										// thread
 			}
 		} catch (InterruptedException e) {
-			System.out.println("\n\nPingPongThread with word " + word + " was interrupted.\n");
+			System.out.println("\n" + getName() + " was interrupted.\n");
 			return;
 		}
 	}
