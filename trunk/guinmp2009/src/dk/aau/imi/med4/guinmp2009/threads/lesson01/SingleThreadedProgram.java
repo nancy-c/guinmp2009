@@ -9,8 +9,10 @@ package dk.aau.imi.med4.guinmp2009.threads.lesson01;
  * In a single-threaded program, only one thing is happening within the program
  * at a time.
  * 
- * All the programs you've looked at so far have been single-threaded programs,
+ * All the programs we've looked at so far have been single-threaded programs,
  * even the ones that use lots of objects.
+ * 
+ * A single-threaded program has just one thread, called the "main thread".
  * 
  * @author David Meredith
  * 
