@@ -21,13 +21,13 @@ public class SingleThreadedProgram {
 	public static void main(String[] args) {
 
 		// Open a bank account
-		Integer bankBalance = 0;
+		Integer bankBalance = 1000;
 
 		// Deposit some money
-		bankBalance = bankBalance + 12;
+		bankBalance = bankBalance + 100;
 
 		// Withdraw some money
-		bankBalance = bankBalance - 5;
+		bankBalance = bankBalance - 50;
 
 		// Print out the balance
 		System.out.println("bankBalance == " + bankBalance);
