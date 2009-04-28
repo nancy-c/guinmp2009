@@ -11,6 +11,7 @@ public class FlowLayoutDemo {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				JFrame frame = new JFrame("FlowLayoutDemo");
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 				
 				//Get the content pane
 				//The layout manager for contentPane is BorderLayout.
