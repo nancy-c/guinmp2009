@@ -57,7 +57,7 @@ public class Convert extends JFrame implements ActionListener {
 		// linkSize method causes all argument fields to be at least the
 		// preferred size of the component with the largest preferred
 		// size
-		layout.linkSize(celsiusTextField, button, fahrenheitValue);
+//		layout.linkSize(celsiusTextField, button, fahrenheitValue);
 
 		//Register an ActionListener to listen for ActionEvents emitted by the button.
 		button.addActionListener(this);
