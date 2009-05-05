@@ -5,7 +5,7 @@ import java.io.*;
 
 public class URLReader {
     public static void main(String[] args) throws Exception {
-	URL yahoo = new URL("http://www.yahoo.com/");
+	URL yahoo = new URL("http://www.titanmusic.com/");
 	BufferedReader in = new BufferedReader(new InputStreamReader(yahoo.openStream()));
 
 	String inputLine;
