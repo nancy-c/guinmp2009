@@ -17,15 +17,22 @@ public class AchievingJoy {
 				}
 			}, "Thread JOY 1").start();
 
-			// Thread 1 will now wait until JOY.notifyAll() is called after JOY
+			// Thread JOY 1 will now wait until JOY.notifyAll() is called after
+			// JOY
 			// has been set to TRUE. This happens when JOY.goodNews() is called.
-
 
 			new Thread(new Runnable() {
 				public void run() {
 					JOY.guardedJoy();
 				}
 			}, "Thread JOY 2").start();
+
+			/*
+			 * Thread JOY 2 is now suspended, waiting for JOY.notifyAll() to be
+			 * called. When notifyAll has been called, Thread JOY 2 will regain
+			 * the lock on JOY and check if the local joy variable within JOY
+			 * has been set to TRUE.
+			 */
 
 			new Thread(new Runnable() {
 				public void run() {
@@ -56,7 +63,7 @@ public class AchievingJoy {
 					MORE_JOY.badNews();
 				}
 			}, "Thread MORE_JOY badNews").start();
-			
+
 			Thread.sleep(3000);
 
 			new Thread(new Runnable() {
@@ -64,8 +71,7 @@ public class AchievingJoy {
 					MORE_JOY.goodNews();
 				}
 			}, "Thread MORE_JOY goodNews").start();
-			
-			
+
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
