@@ -5,7 +5,6 @@ public class Deposit2 extends Thread {
 	private int amount = 0;
 	
 	public Deposit2(String name, int amount) {
-		super();
 		this.amount = amount;
 		this.setName(name);
 	}
