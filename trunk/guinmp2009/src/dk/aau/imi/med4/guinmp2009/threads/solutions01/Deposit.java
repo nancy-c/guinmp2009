@@ -5,7 +5,6 @@ public class Deposit implements Runnable {
 	private int amount = 0;
 	
 	public Deposit(int amount) {
-		super();
 		this.amount = amount;
 	}
 	
