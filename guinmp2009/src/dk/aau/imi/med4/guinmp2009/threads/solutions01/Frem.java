@@ -4,7 +4,7 @@ public class Frem implements Runnable {
 	public void run() {
 
 		/*
-		 * It is usually better to use a synchronized method rather than a
+		 * It is usually safer to use a synchronized method rather than a
 		 * synchronized statement. This is because using a synchronized method
 		 * ensures that calls to the code within that method will always be
 		 * synchronized. This is called server-side synchronization because the

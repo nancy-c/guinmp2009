@@ -5,7 +5,6 @@ public class Withdrawal implements Runnable {
 	private int amount = 0;
 	
 	public Withdrawal(int amount) {
-		super();
 		this.amount = amount;
 	}
 	
