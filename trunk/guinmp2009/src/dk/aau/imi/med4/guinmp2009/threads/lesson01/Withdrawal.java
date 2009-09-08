@@ -5,7 +5,6 @@ public class Withdrawal extends Thread {
 	private int amount = 0;
 	
 	public Withdrawal(String name, int amount) {
-		super();
 		this.amount = amount;
 		this.setName(name);
 	}

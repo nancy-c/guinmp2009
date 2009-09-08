@@ -9,7 +9,7 @@ package dk.aau.imi.med4.guinmp2009.threads.lesson01;
  * called "time slicing").
  * 
  * This version of PingPong uses Runnable objects instead of
- * directly subtyping Thread.
+ * directly subclassing Thread.
  * 
  * @author dmeredith
  *
