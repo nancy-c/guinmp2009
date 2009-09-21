@@ -61,7 +61,7 @@ public class QuoteServerThread extends Thread {
         try {
             if ((returnValue = in.readLine()) == null) {
                 in.close();
-		moreQuotes = false;
+                moreQuotes = false;
                 returnValue = "No more quotes. Goodbye.";
             }
         } catch (IOException e) {
