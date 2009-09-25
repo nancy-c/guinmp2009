@@ -1,7 +1,6 @@
 package dk.aau.imi.med4.guinmp2009.networks;
 
 import java.net.*;
-import java.io.*;
 
 public class ParseURL {
     public static void main(String[] args) throws Exception {
