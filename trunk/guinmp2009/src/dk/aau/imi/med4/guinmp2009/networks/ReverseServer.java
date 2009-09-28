@@ -26,7 +26,9 @@ public class ReverseServer {
 		String inputLine;
 		try {
 			serverSocket = new ServerSocket(50000);
-			clientSocket = serverSocket.accept();
+			clientSocket = serverSocket.accept(); 
+				//Creates a new socket automatically that will be used
+				//to send data to the client.
 			out = new PrintWriter(clientSocket.getOutputStream(), true);
 			in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 			while ((inputLine = in.readLine()) != null){

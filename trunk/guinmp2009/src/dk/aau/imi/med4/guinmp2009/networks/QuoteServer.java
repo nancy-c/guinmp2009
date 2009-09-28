@@ -4,6 +4,14 @@ import java.io.*;
 
 public class QuoteServer {
     public static void main(String[] args) throws IOException {
-        new QuoteServerThread().start();
+    	try {
+    		while(true) {
+    			QuoteServerThread t = new QuoteServerThread();
+    			t.start();
+    			t.join();
+    		}
+    	} catch(InterruptedException e) {
+    		return;
+    	}
     }
 }
