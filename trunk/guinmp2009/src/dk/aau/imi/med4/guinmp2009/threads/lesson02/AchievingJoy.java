@@ -18,8 +18,7 @@ public class AchievingJoy {
 			}, "Thread JOY 1").start();
 
 			// Thread JOY 1 will now wait until JOY.notifyAll() is called after
-			// JOY
-			// has been set to TRUE. This happens when JOY.goodNews() is called.
+			// JOY has been set to TRUE. This happens when JOY.goodNews() is called.
 
 			new Thread(new Runnable() {
 				public void run() {
