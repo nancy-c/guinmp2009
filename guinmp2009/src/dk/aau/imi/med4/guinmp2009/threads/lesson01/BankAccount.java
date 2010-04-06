@@ -17,7 +17,7 @@ public class BankAccount {
 		this.balance = balance;
 	}
 	
-	public /* synchronized */ void deposit(int amount) {
+	public /*synchronized*/ void deposit(int amount) {
 		try {
 			Random rnd = new Random();
 			int bal = getBalance();
@@ -33,7 +33,7 @@ public class BankAccount {
 		}
 	}
 
-	public /* synchronized */ void withdraw(int amount) {
+	public /*synchronized*/ void withdraw(int amount) {
 		try {
 			Random rnd = new Random();
 			int bal = getBalance();
