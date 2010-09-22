@@ -6,7 +6,7 @@ package dk.aau.imi.med4.guinmp2009.threads.lesson02;
 public class SimpleThreads {
 
 	//Delay, in milliseconds before we interrupt MessageLoop
-	//thread (default one hour).
+	//thread.
 	private static long patience = 1000 * 20;
 
 	//Display a message, preceded by the name of the current thread
