@@ -29,8 +29,8 @@ public class HrOgFrJensen {
 	
 	public static void main(String[] args) {
 		Deposit hr = new Deposit("Hr. Jensen", 100);
-		hr.start();
 		Withdrawal fru = new Withdrawal("Fru Jensen", 50);
+		hr.start();
 		fru.start();
 		try {
 			hr.join();
