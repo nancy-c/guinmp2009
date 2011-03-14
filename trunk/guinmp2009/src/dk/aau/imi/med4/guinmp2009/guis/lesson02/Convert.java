@@ -21,8 +21,6 @@ public class Convert extends JFrame implements ActionListener {
 	
 	public Convert() {
 		setTitle("Convert");
-		button.addActionListener(this);
-		celsiusTextField.addActionListener(this);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		GroupLayout layout = new GroupLayout(getContentPane());
 		getContentPane().setLayout(layout);
@@ -61,6 +59,7 @@ public class Convert extends JFrame implements ActionListener {
 
 		//Register an ActionListener to listen for ActionEvents emitted by the button.
 		button.addActionListener(this);
+		celsiusTextField.addActionListener(this);
 		setResizable(false);
 		pack();
 		setVisible(true);
