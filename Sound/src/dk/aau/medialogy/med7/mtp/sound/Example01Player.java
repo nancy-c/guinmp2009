@@ -14,8 +14,8 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 public class Example01Player {
 	public static void main(String[] args) {
 		try {
-//			File soundFile = new File("resources/recordingfile.wav");
-			File soundFile = new File("resources/ChopinOp10No1Start.wav");
+			File soundFile = new File("resources/recordingfile.wav");
+//			File soundFile = new File("resources/ChopinOp10No1Start.wav");
 			AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(soundFile);
 			AudioFormat	audioFormat = audioInputStream.getFormat();
 			DataLine.Info info = new DataLine.Info(SourceDataLine.class, audioFormat);
