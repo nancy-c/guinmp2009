@@ -1,0 +1,1 @@
+Course materials for the 4th Semester B.Sc. in Medialogy course, "Graphical User Interfaces, Networking and Multithreaded Programming", at Aalborg University, given by David Meredith
